@@ -1,0 +1,607 @@
+```css
+/* ------------------------------
+   BASIC RESET
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+
+.header {
+    background-color: #172554;
+    color: white;
+
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+
+/* ------------------------------
+   WELCOME
+------------------------------ */
+
+.welcome {
+    background-color: #1d4ed8;
+    color: white;
+
+    padding: 70px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.small-title {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.welcome h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    max-width: 600px;
+}
+
+.main-button {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 12px 20px;
+
+    background-color: white;
+    color: #1d4ed8;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.main-button:hover {
+    background-color: #dbeafe;
+}
+
+.welcome-card {
+    background-color: rgba(255, 255, 255, 0.15);
+
+    padding: 35px;
+    min-width: 220px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+
+.welcome-card span {
+    font-size: 45px;
+}
+
+
+/* ------------------------------
+   STATISTICS
+------------------------------ */
+
+.stats {
+    padding: 25px 8%;
+
+    display: flex;
+    gap: 20px;
+
+    background-color: white;
+}
+
+.stat-card {
+    flex: 1;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+
+    background-color: #ffffff;
+}
+
+.stat-card span {
+    font-size: 30px;
+}
+
+.stat-card h3 {
+    font-size: 24px;
+}
+
+.stat-card p {
+    color: #64748b;
+}
+
+
+/* ------------------------------
+   SECTIONS
+------------------------------ */
+
+.section {
+    width: 84%;
+    max-width: 1200px;
+
+    margin: 70px auto;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading p {
+    color: #2563eb;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    color: #172554;
+
+    font-size: 32px;
+}
+
+
+/* ------------------------------
+   PROFILE
+------------------------------ */
+
+.profile-container {
+    display: flex;
+    gap: 25px;
+}
+
+.profile-card {
+    width: 30%;
+
+    padding: 30px;
+
+    background-color: white;
+
+    text-align: center;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #dbeafe;
+    color: #1d4ed8;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.profile-card h3 {
+    color: #172554;
+}
+
+.highlight {
+    color: #2563eb;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.profile-table {
+    flex: 1;
+}
+
+
+/* ------------------------------
+   TABLE
+------------------------------ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    background-color: white;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #172554;
+    color: white;
+
+    text-align: left;
+}
+
+th,
+td {
+    padding: 15px;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+
+/* ------------------------------
+   SKILLS
+------------------------------ */
+
+.skills-section {
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+}
+
+.skills {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1;
+    min-width: 200px;
+}
+
+.skill > span {
+    font-weight: bold;
+}
+
+.progress {
+    height: 8px;
+
+    margin-top: 8px;
+
+    background-color: #e2e8f0;
+
+    border-radius: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+
+    background-color: #2563eb;
+
+    border-radius: 10px;
+}
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 80%;
+}
+
+.python {
+    width: 75%;
+}
+
+.java {
+    width: 65%;
+}
+
+.skill-list {
+    margin-top: 30px;
+
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    list-style: none;
+}
+
+.skill-list li {
+    padding: 8px 14px;
+
+    background-color: #dbeafe;
+    color: #1d4ed8;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+
+
+/* ------------------------------
+   SCHEDULE
+------------------------------ */
+
+.table-container {
+    overflow-x: auto;
+}
+
+.schedule-table td:first-child {
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+
+/* ------------------------------
+   REGISTRATION
+------------------------------ */
+
+.registration-section {
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e2e8f0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+label {
+    font-weight: bold;
+    color: #334155;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #93c5fd;
+}
+
+.options {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.options label {
+    font-weight: normal;
+}
+
+.options input {
+    margin-right: 5px;
+}
+
+
+/* ------------------------------
+   FORM BUTTONS
+------------------------------ */
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.form-buttons button {
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 7px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: #2563eb;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #1d4ed8;
+}
+
+.reset-button {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+.reset-button:hover {
+    background-color: #cbd5e1;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    background-color: #172554;
+    color: white;
+
+    padding: 30px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: #bfdbfe;
+}
+
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 800px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .welcome {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .welcome h1 {
+        font-size: 36px;
+    }
+
+    .stats {
+        flex-wrap: wrap;
+    }
+
+    .stat-card {
+        min-width: 45%;
+    }
+
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .welcome {
+        padding: 50px 5%;
+    }
+
+    .welcome h1 {
+        font-size: 30px;
+    }
+
+    .section {
+        width: 92%;
+        margin: 50px auto;
+    }
+
+    .stats {
+        padding: 20px 5%;
+    }
+
+    .stat-card {
+        min-width: 100%;
+    }
+
+    .skills-section,
+    .registration-section {
+        padding: 25px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+}
+```
